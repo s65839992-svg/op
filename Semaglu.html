@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaglutide Research Institute | 司美格鲁肽研究院</title>
+    <!-- Tailwind CSS CDN for Modern Professional Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .lang-cn { display: none; }
+        body.chinese .lang-en { display: none; }
+        body.chinese .lang-cn { display: inline; }
+        body.chinese block.lang-cn { display: block; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo & Title -->
+            <div class="flex items-center space-x-3">
+                <img src="https://github.com/s65839992-svg/op/blob/main/photo_2026-11-02_15-34-31.jpg?raw=true" alt="Logo" class="w-10 h-10 object-cover rounded-lg shadow-sm border border-slate-100">
+                <span class="text-xl font-bold tracking-tight text-slate-900">
+                    <span class="lang-en">Semaglutide Research</span>
+                    <span class="lang-cn">司美格鲁肽研究院</span>
+                </span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-600 transition">
+                    <span class="lang-en">About Us</span>
+                    <span class="lang-cn">关于我们</span>
+                </a>
+                <a href="#products" class="hover:text-brand-600 transition">
+                    <span class="lang-en">Products</span>
+                    <span class="lang-cn">产品中心</span>
+                </a>
+                <a href="#contact" class="hover:text-brand-600 transition">
+                    <span class="lang-en">Contact Us</span>
+                    <span class="lang-cn">联系我们</span>
+                </a>
+            </nav>
+
+            <!-- Actions: Language Toggle & Mobile Menu Button -->
+            <div class="flex items-center space-x-4">
+                <button onclick="toggleLanguage()" class="px-3 py-1.5 text-xs font-semibold text-brand-700 bg-brand-50 border border-brand-100 rounded-full hover:bg-brand-100 transition">
+                    <span class="lang-en">中文 / EN</span>
+                    <span class="lang-cn">English / 中文</span>
+                </button>
+                <button id="menu-btn" class="md:hidden text-slate-600 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block py-2 text-slate-600 font-medium">
+                <span class="lang-en">About Us</span><span class="lang-cn">关于我们</span>
+            </a>
+            <a href="#products" class="block py-2 text-slate-600 font-medium">
+                <span class="lang-en">Products</span><span class="lang-cn">产品中心</span>
+            </a>
+            <a href="#contact" class="block py-2 text-slate-600 font-medium">
+                <span class="lang-en">Contact Us</span><span class="lang-cn">联系我们</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-brand-900 to-slate-900 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider uppercase bg-brand-600/30 border border-brand-400/30 text-brand-200 rounded-full">
+                <span class="lang-en">Advanced Peptide Research & Development</span>
+                <span class="lang-cn">先进多肽科研与研究院</span>
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                <span class="lang-en">Semaglutide & Advanced Peptide Solutions</span>
+                <span class="lang-cn">司美格鲁肽与前沿多肽解决方案</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                <span class="lang-en">Leading the future of metabolic health, glucose regulation, and scientific peptide innovation with uncompromising purity and rigorous quality control.</span>
+                <span class="lang-cn">以无可妥协的纯度和严苛的质控标准，引领代谢健康、血糖调节及多肽科学创新的未来。</span>
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#products" class="px-8 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                    <span class="lang-en">Explore Products</span>
+                    <span class="lang-cn">浏览产品中心</span>
+                </a>
+                <a href="#about" class="px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold rounded-xl backdrop-blur-md transition">
+                    <span class="lang-en">Learn More</span>
+                    <span class="lang-cn">了解核心机制</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                <span class="lang-en">About Semaglutide</span>
+                <span class="lang-cn">关于司美格鲁肽（Semaglutide）</span>
+            </h2>
+            <div class="w-16 h-1 bg-brand-600 mx-auto rounded-full mb-6"></div>
+            <p class="text-slate-600 leading-relaxed text-lg">
+                <span class="lang-en">Semaglutide is a long-acting glucagon-like peptide-1 (GLP-1) receptor agonist originally developed by Novo Nordisk, Denmark. It simulates natural GLP-1 to provide dual benefits in glucose stabilization and weight management.</span>
+                <span class="lang-cn">司美格鲁肽是一种长效的胰高血糖素样肽-1（GLP-1）受体激动剂，由丹麦诺和诺德公司研发。它能够模拟天然GLP-1激素，实现平稳降糖与控制体重的双重效果。</span>
+            </p>
+        </div>
+
+        <!-- Grid Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-50 text-brand-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-atom"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">
+                    <span class="lang-en">Mechanism of Action</span>
+                    <span class="lang-cn">核心作用机制</span>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    <span class="lang-en">Glucose-dependent insulin secretion, glucagon suppression, delayed gastric emptying, and central appetite suppression.</span>
+                    <span class="lang-cn">葡萄糖浓度依赖性促进胰岛素分泌、抑制胰高血糖素释放、显著延缓胃排空及中枢性抑制食欲。</span>
+                </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">
+                    <span class="lang-en">Indications</span>
+                    <span class="lang-cn">主要适应症</span>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    <span class="lang-en">Adult Type 2 diabetes management (HbA1c reduction) and long-term weight management for obesity/overweight.</span>
+                    <span class="lang-cn">成年2型糖尿病血糖控制（降低HbA1c），以及肥胖或超重人群的长期体重管理。</span>
+                </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-syringe"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">
+                    <span class="lang-en">Administration</span>
+                    <span class="lang-cn">给药方式</span>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    <span class="lang-en">Available in clinical practice primarily as subcutaneous injection formulations (typically once weekly) and oral tablets.</span>
+                    <span class="lang-cn">临床上主要有皮下注射制剂（通常每周一次）及口服片剂。</span>
+                </p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">
+                    <span class="lang-en">Safety Notice</span>
+                    <span class="lang-cn">安全提示</span>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    <span class="lang-en">May cause mild-to-moderate gastrointestinal reactions. Strict medical supervision required; contraindicated in MTC history.</span>
+                    <span class="lang-cn">常见轻中度胃肠道反应。需遵医嘱使用，有甲状腺髓样癌病史者禁用。</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Visual / Product Display Showcase -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">
+                    <span class="lang-en">Quality Assurance & Lab Report</span>
+                    <span class="lang-cn">品质保证与检测报告</span>
+                </span>
+                <h3 class="text-2xl font-bold text-slate-900 mt-1 mb-4">
+                    <span class="lang-en">Certified High Purity & Analytical Testing</span>
+                    <span class="lang-cn">高纯度验证与严格分析检测</span>
+                </h3>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    <span class="lang-en">Each batch undergoes rigorous HPLC purity tests, LC-MS identity verification, LAL endotoxin assays, and USP sterility testing to ensure research excellence.</span>
+                    <span class="lang-cn">每一批次产品均通过严苛的 HPLC 纯度检测、LC-MS 鉴别、LAL 内毒素及 USP 无菌检测，确保科研与应用的高标准。</span>
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm font-medium text-slate-700">
+                    <span class="flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-check text-emerald-600"></i> Purity > 99.5%</span>
+                    <span class="flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-check text-emerald-600"></i> LC-MS Verified</span>
+                    <span class="flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-check text-emerald-600"></i> Endotoxin PASS</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://github.com/s65839992-svg/op/blob/main/photo_2026-10-30_15-15-16.jpg?raw=true" alt="Certificate of Analysis" class="rounded-xl shadow-md border border-slate-100 object-cover w-full h-48 hover:scale-105 transition duration-300">
+                <img src="https://github.com/s65839992-svg/op/blob/main/photo_2026-10-28_20-51-41.jpg?raw=true" alt="Product Vial" class="rounded-xl shadow-md border border-slate-100 object-cover w-full h-48 hover:scale-105 transition duration-300">
+                <img src="https://github.com/s65839992-svg/op/blob/main/photo_2026-10-28_20-52-20.jpg?raw=true" alt="Packaging Box" class="rounded-xl shadow-md border border-slate-100 object-cover w-full h-48 hover:scale-105 transition duration-300">
+                <img src="https://github.com/s65839992-svg/op/blob/main/photo_2026-10-28_20-53-00.jpg?raw=true" alt="Batch Production" class="rounded-xl shadow-md border border-slate-100 object-cover w-full h-48 hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Pricing Catalog Section -->
+    <section id="products" class="bg-slate-100 py-20 px-4 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                    <span class="lang-en">Product Catalog & Specifications</span>
+                    <span class="lang-cn">产品中心与多肽规格表</span>
+                </h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-600">
+                    <span class="lang-en">Comprehensive list of research peptides, metabolic regulators, and clinical supply formulations.</span>
+                    <span class="lang-cn">涵盖代谢调节剂、修复肽、抗衰、神经及促生长类全系列科研多肽及配套耗材。</span>
+                </p>
+            </div>
+
+            <!-- Table Container -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-900 text-white text-xs uppercase tracking-wider">
+                                <th class="py-4 px-6 font-semibold">
+                                    <span class="lang-en">English Name</span>
+                                    <span class="lang-cn">英文名称</span>
+                                </th>
+                                <th class="py-4 px-6 font-semibold">
+                                    <span class="lang-en">Chinese Name</span>
+                                    <span class="lang-cn">中文名称</span>
+                                </th>
+                                <th class="py-4 px-6 font-semibold">
+                                    <span class="lang-en">Specification</span>
+                                    <span class="lang-cn">规格</span>
+                                </th>
+                                <th class="py-4 px-6 font-semibold">
+                                    <span class="lang-en">Code</span>
+                                    <span class="lang-cn">简称</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-sm text-slate-700">
+                            <!-- Category: Semaglutide & Metabolic -->
+                            <tr class="bg-slate-50 font-bold text-brand-700"><td colspan="4" class="py-3 px-6">Metabolic & Weight Management / 代谢与体重管理类</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Semaglutide</td><td class="py-3 px-6">司美格鲁肽</td><td class="py-3 px-6">5mg*10瓶</td><td class="py-3 px-6 text-slate-500">SM5</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Semaglutide</td><td class="py-3 px-6">司美格鲁肽</td><td class="py-3 px-6">10mg*10瓶</td><td class="py-3 px-6 text-slate-500">SM10</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Semaglutide</td><td class="py-3 px-6">司美格鲁肽</td><td class="py-3 px-6">15mg*10瓶</td><td class="py-3 px-6 text-slate-500">SM15</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Semaglutide</td><td class="py-3 px-6">司美格鲁肽</td><td class="py-3 px-6">20mg*10瓶</td><td class="py-3 px-6 text-slate-500">SM20</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Semaglutide</td><td class="py-3 px-6">司美格鲁肽</td><td class="py-3 px-6">30mg*10瓶</td><td class="py-3 px-6 text-slate-500">SM30</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Semaglutide</td><td class="py-3 px-6">司美格鲁肽</td><td class="py-3 px-6">40mg*10瓶</td><td class="py-3 px-6 text-slate-500">SM40</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Semaglutide</td><td class="py-3 px-6">司美格鲁肽</td><td class="py-3 px-6">50mg*10瓶</td><td class="py-3 px-6 text-slate-500">SM50</td></tr>
+                            
+                            <tr><td class="py-3 px-6 font-medium">Tirzepatide</td><td class="py-3 px-6">替尔泊肽</td><td class="py-3 px-6">5mg*10瓶</td><td class="py-3 px-6 text-slate-500">TR5</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Tirzepatide</td><td class="py-3 px-6">替尔泊肽</td><td class="py-3 px-6">10mg*10瓶</td><td class="py-3 px-6 text-slate-500">TR10</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Tirzepatide</td><td class="py-3 px-6">替尔泊肽</td><td class="py-3 px-6">15mg*10瓶</td><td class="py-3 px-6 text-slate-500">TR15</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Tirzepatide</td><td class="py-3 px-6">替尔泊肽</td><td class="py-3 px-6">20mg*10瓶</td><td class="py-3 px-6 text-slate-500">TR20</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Tirzepatide</td><td class="py-3 px-6">替尔泊肽</td><td class="py-3 px-6">30mg*10瓶</td><td class="py-3 px-6 text-slate-500">TR30</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Tirzepatide</td><td class="py-3 px-6">替尔泊肽</td><td class="py-3 px-6">50mg*10瓶</td><td class="py-3 px-6 text-slate-500">TR50</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Tirzepatide</td><td class="py-3 px-6">替尔泊肽</td><td class="py-3 px-6">100mg*10瓶</td><td class="py-3 px-6 text-slate-500">TR100</td></tr>
+
+                            <tr><td class="py-3 px-6 font-medium">Retatrutide</td><td class="py-3 px-6">瑞塔鲁肽</td><td class="py-3 px-6">10mg*10瓶</td><td class="py-3 px-6 text-slate-500">RT10</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Retatrutide</td><td class="py-3 px-6">瑞塔鲁肽</td><td class="py-3 px-6">20mg*10瓶</td><td class="py-3 px-6 text-slate-500">RT20</td></tr>
+
+                            <!-- Category: Repair & Recovery -->
+                            <tr class="bg-slate-50 font-bold text-brand-700"><td colspan="4" class="py-3 px-6">Repair & Recovery / 修复恢复类</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">BPC 157</td><td class="py-3 px-6">身体修复肽</td><td class="py-3 px-6">5mg*10瓶</td><td class="py-3 px-6 text-slate-500">BC5</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">BPC 157</td><td class="py-3 px-6">身体修复肽</td><td class="py-3 px-6">10mg*10瓶</td><td class="py-3 px-6 text-slate-500">BC10</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">TB500</td><td class="py-3 px-6">修复肽</td><td class="py-3 px-6">5mg*10瓶</td><td class="py-3 px-6 text-slate-500">TB5</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">TB500</td><td class="py-3 px-6">修复肽</td><td class="py-3 px-6">10mg*10瓶</td><td class="py-3 px-6 text-slate-500">TB10</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">GHK-Cu</td><td class="py-3 px-6">蓝铜胜肽</td><td class="py-3 px-6">50mg*10瓶</td><td class="py-3 px-6 text-slate-500">CU50</td></tr>
+
+                            <!-- Category: Anti-Aging & Beauty -->
+                            <tr class="bg-slate-50 font-bold text-brand-700"><td colspan="4" class="py-3 px-6">Anti-Aging & Beauty / 美容抗衰类</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Epithalon</td><td class="py-3 px-6">艾匹泰隆</td><td class="py-3 px-6">10mg*10瓶</td><td class="py-3 px-6 text-slate-500">ET10</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Glutathione</td><td class="py-3 px-6">谷胱甘肽</td><td class="py-3 px-6">600mg*10瓶</td><td class="py-3 px-6 text-slate-500">GTT600</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">NAD+</td><td class="py-3 px-6">辅酶NAD+</td><td class="py-3 px-6">500mg*10瓶</td><td class="py-3 px-6 text-slate-500">NJ500</td></tr>
+
+                            <!-- Category: Consumables & Others -->
+                            <tr class="bg-slate-50 font-bold text-brand-700"><td colspan="4" class="py-3 px-6">Consumables & Accessories / 配套耗材与其它</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Bacteriostatic Water</td><td class="py-3 px-6">抑菌水</td><td class="py-3 px-6">10ml*10瓶</td><td class="py-3 px-6 text-slate-500">BA10</td></tr>
+                            <tr><td class="py-3 px-6 font-medium">Sterile Water</td><td class="py-3 px-6">无菌水</td><td class="py-3 px-6">10ml*10瓶</td><td class="py-3 px-6 text-slate-500">WA10</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 px-4 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">
+            <span class="lang-en">Contact Our Research Team</span>
+            <span class="lang-cn">联系我们</span>
+        </h2>
+        <div class="w-16 h-1 bg-brand-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-slate-600 mb-12 max-w-xl mx-auto">
+            <span class="lang-en">For research inquiries, product specifications, or wholesale collaboration, reach out to us directly via WhatsApp or Telegram.</span>
+            <span class="lang-cn">如需科研咨询、产品规格确认或商务合作，欢迎通过以下即时通讯方式与我们取得联系。</span>
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/85290846824" target="_blank" class="flex items-center justify-center space-x-4 p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-emerald-500 hover:shadow-md transition group">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="text-left">
+                    <div class="text-xs text-slate-400 font-medium">WhatsApp</div>
+                    <div class="text-slate-800 font-bold">+852 9084 6824</div>
+                </div>
+            </a>
+
+            <!-- Telegram -->
+            <a href="https://t.me/BenataY" target="_blank" class="flex items-center justify-center space-x-4 p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-sky-500 hover:shadow-md transition group">
+                <div class="w-12 h-12 bg-sky-50 text-sky-500 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="text-left">
+                    <div class="text-xs text-slate-400 font-medium">Telegram</div>
+                    <div class="text-slate-800 font-bold">@BenataY</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+            <div class="flex items-center space-x-3">
+                <img src="https://github.com/s65839992-svg/op/blob/main/photo_2026-11-02_15-34-31.jpg?raw=true" alt="Logo" class="w-8 h-8 object-cover rounded-lg">
+                <span class="text-white font-semibold">Semaglutide Research Institute</span>
+            </div>
+            <div>
+                &copy; 2026 Semaglutide Research Institute. <span class="lang-en">All rights reserved. For Research Use Only.</span><span class="lang-cn">保留所有权利。仅供科研使用。</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script for Mobile Menu & Language Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleLanguage() {
+            document.body.classList.toggle('chinese');
+        }
+    </script>
+</body>
+</html>
